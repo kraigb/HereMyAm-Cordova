@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <!-- Recommended to prevent pinch zoom in webviews -->
+    <meta name="viewport" content="user-scalable=no" />    
+
+    <title>HereMyAm (Cordova)</title>
+    
+    <link href="css/frameworks/ui-dark.css" rel="stylesheet" />    
+    <link href="css/index.css" rel="stylesheet" />    
+
+    <!-- Cordova standard -->
+    <script src="cordova.js"></script>
+
+    <!-- WinJS -->
+    <script src="scripts/frameworks/base.js"></script>
+    <script src="scripts/frameworks/ui.js"></script>
+    <script src="scripts/frameworks/winjs.js"></script>
+
+    <!-- Project references -->
+    <script src="scripts/platformOverrides.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/share.js"></script>
+
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="title mainChild">
+            <h2 class="titlearea ">Here My Am!</h2>
+        </div>
+        <div id="locationSection" class="mainChild subsection">
+            <h3 class="section-title" role="heading">Here:</h3>
+            <div id="locationControls">
+                <input id="txtLocation" type="text" placeholder="tap to edit" />
+                <button id="btnLocate" class="iconGlobe"></button> 
+            </div>
+        </div>
+        <div id="photoSection" class="mainChild subsection">
+            <h3 id="photoHeading" class="section-title">My:</h3>
+            <div id="photo">
+                <img id="photoImg" src="#" draggable="false"
+                     alt="Tap to capture image from camera" />
+            </div>
+        </div>
+        <div id="shareSection" class="mainChild">
+            <button id="btnShare" class="shareButton" disabled>Share</button>            
+        </div>
+    </div>
+</body>
+
+</html>

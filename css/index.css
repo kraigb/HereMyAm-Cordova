@@ -1,0 +1,189 @@
+﻿@-ms-viewport{width:auto!important}
+
+/* 
+    Notes:
+    Windows and Windows Phone (through 8.1) use -ms prefixed styles.
+    Android and iOS use -webkit prefixed styles.
+
+    There are a few general design breakpoints for layout:
+    Heights: 480 and 768 (actually 767, see below)
+    Widths: 480, which accomodates the 500-pixel width of Windows split-screen views.
+    
+    If you use device-[height | width] then there are more variations. Using
+    [min | max]-[width | height] you get automatic scaling for CSS, which reduces
+    the breakpoints. This has the effect that some device sizes don't translate
+    exactly: the iPad's 768 dimension comes through as 767.78 so the breakpoint
+    has to be 767 as CSS media queries operate on integer comparisons.    	
+*/
+
+/* 
+    This app will focus on being portrait-only to simplify the layout
+	requirements. The only adjustments we'll make, then, are for 
+	various screen sizes and not for orientation.
+*/
+
+.mainContainer {
+    /* Windows */
+	display: -ms-flexbox;
+	-ms-flex-flow: column;	
+
+    /* Android, iOS */
+    display: -webkit-flex;
+    -webkit-flex-flow: column;
+	
+	height: 100%;	
+}
+
+/* Override of WinJS */
+h3 {
+    font-weight: 300;
+}
+
+.mainChild {
+    margin-left: 20px;
+    margin-right: 20px;	
+}
+
+.title {
+	margin-top: 10px;	
+}
+
+
+.subsection {
+	display:-ms-flexbox;		
+    -ms-flex-flow: column;	
+
+    display: -webkit-flex;
+    -webkit-flex-flow: column;		
+	
+	margin-top: 15px;	
+}
+
+.section-title {
+	/* height: 40px; */
+}
+
+#locationControls {
+    /* Use a row flexbox here to allow the input control to fill the space */
+	display:-ms-flexbox;		
+    -ms-flex-flow: row;	
+
+    display: -webkit-flex;
+    -webkit-flex-flow: row;		
+}
+
+#txtLocation {
+	flex: 1 1 0px;  /* Expand to fill available space */    
+    -webkit-box-flex: 1 1 0px;   
+    -webkit-flex: 1 1 0px;
+}
+
+#btnLocate {
+    margin-left: 15px;
+
+    /* Make it circular */
+	min-width: 40px;
+    width: 40px;
+    border-radius: 20px;
+}
+
+#btnLocate::before {
+    /* WinJS references ../fonts/Symbols.ttf from its stylesheets */
+    font-family: "Symbols";
+    font-weight: normal;
+    font-size: 10pt;    
+    content: "\E12B"; /* globe */  
+}
+
+#photoSection {	
+	flex: 1 1 0px;        
+    -webkit-flex: 1 1 0px;    
+    min-height: 100px;
+}
+
+#photo {	
+	border: solid 1px gray;	
+	width: 100%;    
+	height: calc(100% - 40px); /* 40px is height of heading */
+    margin-top: 6px;
+    margin-bottom: 10px;
+
+    /* Make sure the image is centered inside this area */
+    display: -webkit-box;
+    display: -ms-flexbox;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* iOS */
+    display: -webkit-flex;
+    -webkit-flex: 1 1 0px;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+}
+
+#shareSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+	-ms-flex-pack: center;	
+    -ms-flex-item-align: center;
+    justify-content: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+
+	margin-bottom: 15px;
+}
+
+.shareButton {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+/* Adjustments for narrower/shorter screens */
+@media screen and (orientation: portrait) and (max-width: 499px),
+       screen and (orientation: portrait) and (max-height: 480px)
+ {	
+    h2 {
+        font-size: 14pt;
+    }
+
+    button, input {
+        font-size: 10pt;        
+    }
+}
+
+
+/* Tighten up margins for short screens */
+@media screen and (orientation: portrait) and (max-height: 480px) {
+    .title {
+        margin-top: 5px;
+    }
+
+    .mainChild {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .subsection {
+        margin-top: 10px;
+    }
+
+    button, input {
+        min-height: 15px;
+    }
+
+    #photoSection {
+        margin-top: 5px;
+    }
+
+    #photo {
+        margin-bottom: 5px;
+    }
+
+    #shareSection {
+        margin-bottom: 5px;
+    }
+}

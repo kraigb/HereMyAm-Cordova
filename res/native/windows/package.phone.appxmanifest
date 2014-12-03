@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
+    <Identity Name="Microsoft.MSDNMagazine.Cordova.HereMyAm" Publisher="CN=$username$" Version="1.0.0.0" />
+    <mp:PhoneIdentity PhoneProductId="4ca663b0-5ed7-11e4-998d-252553d51860" PhonePublisherId="db093ed5-53b1-45f7-af72-751e8f36ab80" />
+    <Properties>
+        <DisplayName>Microsoft.MSDNMagazine.Cordova.HereMyAm</DisplayName>
+        <PublisherDisplayName>$username$</PublisherDisplayName>
+        <Logo>images\StoreLogo.png</Logo>
+    </Properties>
+    <Prerequisites>
+        <OSMinVersion>6.3.1</OSMinVersion>
+        <OSMaxVersionTested>6.3.1</OSMaxVersionTested>
+    </Prerequisites>
+    <Resources>
+        <Resource Language="x-generate" />
+    </Resources>
+    <Applications>
+        <Application Id="Microsoft.MSDNMagazine.Cordova.HereMyAm" StartPage="www/index.html">
+            <m3:VisualElements BackgroundColor="#00B294"
+                               Description="A simple selfie app that takes a photo and shares it along with customizable location information."
+                               DisplayName="Here My Am!" ForegroundText="light" Square150x150Logo="images\Square150x150Logo.png"
+                               Square44x44Logo="images\Square44x44Logo.png">
+                <m3:DefaultTile Square71x71Logo="images\Square71x71Logo.png" Wide310x150Logo="images\Wide310x150Logo.png">
+                </m3:DefaultTile>
+                <m3:SplashScreen Image="images\SplashScreen.png" />
+                <m3:InitialRotationPreference>
+                  <m3:Rotation Preference="portrait" />
+                  <m3:Rotation Preference="portraitFlipped" />
+                </m3:InitialRotationPreference>
+            </m3:VisualElements>
+        </Application>
+    </Applications>
+    <Capabilities>
+        <Capability Name="picturesLibrary" />
+        <Capability Name="internetClientServer" />
+        <DeviceCapability Name="location" />
+        <DeviceCapability Name="webcam" />
+    </Capabilities>
+</Package>

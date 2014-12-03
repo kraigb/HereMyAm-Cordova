@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Android">
+      <Configuration>Debug</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|iOS">
+      <Configuration>Debug</Configuration>
+      <Platform>iOS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows-AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows-AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows Phone (Universal)">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows Phone (Universal)</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Android">
+      <Configuration>Release</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|iOS">
+      <Configuration>Release</Configuration>
+      <Platform>iOS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows-AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>Windows-AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows Phone (Universal)">
+      <Configuration>Release</Configuration>
+      <Platform>Windows Phone (Universal)</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Android">
+      <Configuration>Distribution</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|iOS">
+      <Configuration>Distribution</Configuration>
+      <Platform>iOS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows-AnyCPU">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows-AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows Phone (Universal)">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows Phone (Universal)</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>9ad84431-828f-4ee1-84cf-327feccff0e9</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DefaultReferenceGroup>Implicit (Multi-Device Apps)</DefaultReferenceGroup>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0'">
+    <VisualStudioVersion>12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="css\fonts\Symbols.ttf" />
+    <Content Include="css\frameworks\ui-dark.css" />
+    <Content Include="merges\windows\scripts\share.js" />
+    <Content Include="plugins\net.yoik.cordova.plugins.screenorientation\.fetch.json" />
+    <Content Include="plugins\net.yoik.cordova.plugins.screenorientation\LICENSE" />
+    <Content Include="plugins\net.yoik.cordova.plugins.screenorientation\plugin.xml" />
+    <Content Include="plugins\net.yoik.cordova.plugins.screenorientation\README.md" />
+    <Content Include="plugins\net.yoik.cordova.plugins.screenorientation\src\android\net\yoik\cordova\plugins\screenorientation\YoikScreenOrientation.java" />
+    <Content Include="plugins\net.yoik.cordova.plugins.screenorientation\src\ios\YoikScreenOrientation.h" />
+    <Content Include="plugins\net.yoik.cordova.plugins.screenorientation\src\ios\YoikScreenOrientation.m" />
+    <Content Include="plugins\net.yoik.cordova.plugins.screenorientation\www\screenorientation.android.js" />
+    <Content Include="plugins\net.yoik.cordova.plugins.screenorientation\www\screenorientation.bb10.js" />
+    <Content Include="plugins\net.yoik.cordova.plugins.screenorientation\www\screenorientation.ios.js" />
+    <Content Include="plugins\net.yoik.cordova.plugins.screenorientation\www\screenorientation.js" />
+    <Content Include="plugins\nl.x-services.plugins.socialsharing\.fetch.json" />
+    <Content Include="plugins\nl.x-services.plugins.socialsharing\plugin.xml" />
+    <Content Include="plugins\nl.x-services.plugins.socialsharing\README.md" />
+    <Content Include="plugins\nl.x-services.plugins.socialsharing\screenshot-android-share.png" />
+    <Content Include="plugins\nl.x-services.plugins.socialsharing\screenshot-ios6-share.png" />
+    <Content Include="plugins\nl.x-services.plugins.socialsharing\screenshot-ios7-ipad-share.png" />
+    <Content Include="plugins\nl.x-services.plugins.socialsharing\screenshot-ios7-share.png" />
+    <Content Include="plugins\nl.x-services.plugins.socialsharing\screenshot-wp8-share.jpg" />
+    <Content Include="plugins\nl.x-services.plugins.socialsharing\screenshots-ios7-shareconfig.png" />
+    <Content Include="plugins\nl.x-services.plugins.socialsharing\src\android\nl\xservices\plugins\SocialSharing.java" />
+    <Content Include="plugins\nl.x-services.plugins.socialsharing\src\ios\SocialSharing.h" />
+    <Content Include="plugins\nl.x-services.plugins.socialsharing\src\ios\SocialSharing.m" />
+    <Content Include="plugins\nl.x-services.plugins.socialsharing\src\wp8\SocialSharing.cs" />
+    <Content Include="plugins\nl.x-services.plugins.socialsharing\www\SocialSharing.js" />
+    <Content Include="plugins\org.apache.cordova.camera\.fetch.json" />
+    <Content Include="plugins\org.apache.cordova.camera\CONTRIBUTING.md" />
+    <Content Include="plugins\org.apache.cordova.camera\doc\de\index.md" />
+    <Content Include="plugins\org.apache.cordova.camera\doc\es\index.md" />
+    <Content Include="plugins\org.apache.cordova.camera\doc\fr\index.md" />
+    <Content Include="plugins\org.apache.cordova.camera\doc\index.md" />
+    <Content Include="plugins\org.apache.cordova.camera\doc\it\index.md" />
+    <Content Include="plugins\org.apache.cordova.camera\doc\ja\index.md" />
+    <Content Include="plugins\org.apache.cordova.camera\doc\ko\index.md" />
+    <Content Include="plugins\org.apache.cordova.camera\doc\pl\index.md" />
+    <Content Include="plugins\org.apache.cordova.camera\doc\ru\index.md" />
+    <Content Include="plugins\org.apache.cordova.camera\doc\zh\index.md" />
+    <Content Include="plugins\org.apache.cordova.camera\LICENSE" />
+    <Content Include="plugins\org.apache.cordova.camera\NOTICE" />
+    <Content Include="plugins\org.apache.cordova.camera\package.json" />
+    <Content Include="plugins\org.apache.cordova.camera\plugin.xml" />
+    <Content Include="plugins\org.apache.cordova.camera\README.md" />
+    <Content Include="plugins\org.apache.cordova.camera\RELEASENOTES.md" />
+    <Content Include="plugins\org.apache.cordova.camera\src\android\CameraLauncher.java" />
+    <Content Include="plugins\org.apache.cordova.camera\src\android\ExifHelper.java" />
+    <Content Include="plugins\org.apache.cordova.camera\src\android\FileHelper.java" />
+    <Content Include="plugins\org.apache.cordova.camera\src\blackberry10\index.js" />
+    <Content Include="plugins\org.apache.cordova.camera\src\browser\CameraProxy.js" />
+    <Content Include="plugins\org.apache.cordova.camera\src\firefoxos\CameraProxy.js" />
+    <Content Include="plugins\org.apache.cordova.camera\src\ios\CDVCamera.h" />
+    <Content Include="plugins\org.apache.cordova.camera\src\ios\CDVCamera.m" />
+    <Content Include="plugins\org.apache.cordova.camera\src\ios\CDVExif.h" />
+    <Content Include="plugins\org.apache.cordova.camera\src\ios\CDVJpegHeaderWriter.h" />
+    <Content Include="plugins\org.apache.cordova.camera\src\ios\CDVJpegHeaderWriter.m" />
+    <Content Include="plugins\org.apache.cordova.camera\src\ubuntu\back.png" />
+    <Content Include="plugins\org.apache.cordova.camera\src\ubuntu\camera.cpp" />
+    <Content Include="plugins\org.apache.cordova.camera\src\ubuntu\camera.h" />
+    <Content Include="plugins\org.apache.cordova.camera\src\ubuntu\CaptureWidget.qml" />
+    <Content Include="plugins\org.apache.cordova.camera\src\ubuntu\shoot.png" />
+    <Content Include="plugins\org.apache.cordova.camera\src\ubuntu\toolbar-left.png" />
+    <Content Include="plugins\org.apache.cordova.camera\src\ubuntu\toolbar-middle.png" />
+    <Content Include="plugins\org.apache.cordova.camera\src\ubuntu\toolbar-right.png" />
+    <Content Include="plugins\org.apache.cordova.camera\src\windows\CameraProxy.js" />
+    <Content Include="plugins\org.apache.cordova.camera\src\wp\Camera.cs" />
+    <Content Include="plugins\org.apache.cordova.camera\tests\plugin.xml" />
+    <Content Include="plugins\org.apache.cordova.camera\tests\tests.js" />
+    <Content Include="plugins\org.apache.cordova.camera\www\blackberry10\assets\camera.html" />
+    <Content Include="plugins\org.apache.cordova.camera\www\blackberry10\assets\camera.js" />
+    <Content Include="plugins\org.apache.cordova.camera\www\Camera.js" />
+    <Content Include="plugins\org.apache.cordova.camera\www\CameraConstants.js" />
+    <Content Include="plugins\org.apache.cordova.camera\www\CameraPopoverHandle.js" />
+    <Content Include="plugins\org.apache.cordova.camera\www\CameraPopoverOptions.js" />
+    <Content Include="plugins\org.apache.cordova.camera\www\ios\CameraPopoverHandle.js" />
+    <Content Include="plugins\org.apache.cordova.geolocation\.fetch.json" />
+    <Content Include="plugins\org.apache.cordova.geolocation\CONTRIBUTING.md" />
+    <Content Include="plugins\org.apache.cordova.geolocation\doc\de\index.md" />
+    <Content Include="plugins\org.apache.cordova.geolocation\doc\es\index.md" />
+    <Content Include="plugins\org.apache.cordova.geolocation\doc\fr\index.md" />
+    <Content Include="plugins\org.apache.cordova.geolocation\doc\index.md" />
+    <Content Include="plugins\org.apache.cordova.geolocation\doc\it\index.md" />
+    <Content Include="plugins\org.apache.cordova.geolocation\doc\ja\index.md" />
+    <Content Include="plugins\org.apache.cordova.geolocation\doc\ko\index.md" />
+    <Content Include="plugins\org.apache.cordova.geolocation\doc\pl\index.md" />
+    <Content Include="plugins\org.apache.cordova.geolocation\doc\ru\index.md" />
+    <Content Include="plugins\org.apache.cordova.geolocation\doc\zh\index.md" />
+    <Content Include="plugins\org.apache.cordova.geolocation\LICENSE" />
+    <Content Include="plugins\org.apache.cordova.geolocation\NOTICE" />
+    <Content Include="plugins\org.apache.cordova.geolocation\package.json" />
+    <Content Include="plugins\org.apache.cordova.geolocation\plugin.xml" />
+    <Content Include="plugins\org.apache.cordova.geolocation\README.md" />
+    <Content Include="plugins\org.apache.cordova.geolocation\RELEASENOTES.md" />
+    <Content Include="plugins\org.apache.cordova.geolocation\src\firefoxos\GeolocationProxy.js" />
+    <Content Include="plugins\org.apache.cordova.geolocation\src\ios\CDVLocation.h" />
+    <Content Include="plugins\org.apache.cordova.geolocation\src\ios\CDVLocation.m" />
+    <Content Include="plugins\org.apache.cordova.geolocation\src\ubuntu\geolocation.cpp" />
+    <Content Include="plugins\org.apache.cordova.geolocation\src\ubuntu\geolocation.h" />
+    <Content Include="plugins\org.apache.cordova.geolocation\src\windows\GeolocationProxy.js" />
+    <Content Include="plugins\org.apache.cordova.geolocation\src\wp\GeoLocation.cs" />
+    <Content Include="plugins\org.apache.cordova.geolocation\tests\plugin.xml" />
+    <Content Include="plugins\org.apache.cordova.geolocation\tests\tests.js" />
+    <Content Include="plugins\org.apache.cordova.geolocation\www\blackberry10\GeolocationProxy.js" />
+    <Content Include="plugins\org.apache.cordova.geolocation\www\Coordinates.js" />
+    <Content Include="plugins\org.apache.cordova.geolocation\www\geolocation.js" />
+    <Content Include="plugins\org.apache.cordova.geolocation\www\Position.js" />
+    <Content Include="plugins\org.apache.cordova.geolocation\www\PositionError.js" />
+    <Content Include="res\icons\windows\logo.scale-140.png" />
+    <Content Include="res\icons\windows\logo.scale-180.png" />
+    <Content Include="res\icons\windows\logo.scale-80.png" />
+    <Content Include="res\icons\windows\smalllogo.scale-140.png" />
+    <Content Include="res\icons\windows\smalllogo.scale-180.png" />
+    <Content Include="res\icons\windows\smalllogo.scale-80.png" />
+    <Content Include="res\icons\windows\storelogo.scale-140.png" />
+    <Content Include="res\icons\windows\storelogo.scale-180.png" />
+    <Content Include="res\native\windows\CordovaApp_TemporaryKey.pfx" />
+    <Content Include="scripts\share.js" />
+    <Folder Include="bld\" />
+    <Folder Include="images\" />
+    <Content Include="merges\android\scripts\android2.3-jscompat.js" />
+    <Content Include="merges\android\scripts\platformOverrides.js" />
+    <Folder Include="merges\ios\" />
+    <Content Include="merges\windows\scripts\platformOverrides.js" />
+    <Content Include="merges\windows\scripts\winstore-jscompat.js" />
+    <Folder Include="res\icons\android\" />
+    <Folder Include="res\icons\ios\" />
+    <Folder Include="res\screens\android\" />
+    <Folder Include="res\screens\ios\" />
+    <Folder Include="res\screens\windows\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="index.html" />
+    <Content Include="scripts\frameworks\base.js" />
+    <Content Include="scripts\frameworks\ui.js" />
+    <Content Include="scripts\frameworks\WinJS.js" />
+    <Content Include="scripts\index.js" />
+    <Content Include="scripts\platformOverrides.js" />
+    <Content Include="css\index.css" />
+    <Content Include="res\icons\android\icon-36-ldpi.png" />
+    <Content Include="res\icons\android\icon-48-mdpi.png" />
+    <Content Include="res\icons\android\icon-72-hdpi.png" />
+    <Content Include="res\icons\android\icon-96-xhdpi.png" />
+    <Content Include="res\icons\ios\icon-40.png" />
+    <Content Include="res\icons\ios\icon-40-2x.png" />
+    <Content Include="res\icons\ios\icon-50.png" />
+    <Content Include="res\icons\ios\icon-50-2x.png" />
+    <Content Include="res\icons\ios\icon-57.png" />
+    <Content Include="res\icons\ios\icon-57-2x.png" />
+    <Content Include="res\icons\ios\icon-60.png" />
+    <Content Include="res\icons\ios\icon-60-2x.png" />
+    <Content Include="res\icons\ios\icon-72.png" />
+    <Content Include="res\icons\ios\icon-72-2x.png" />
+    <Content Include="res\icons\ios\icon-76.png" />
+    <Content Include="res\icons\ios\icon-76-2x.png" />
+    <Content Include="res\icons\ios\icon-small.png" />
+    <Content Include="res\icons\ios\icon-small-2x.png" />
+    <Content Include="res\icons\windows\logo.png" />
+    <Content Include="res\icons\windows\smalllogo.png" />
+    <Content Include="res\icons\windows\Square150x150Logo.scale-240.png" />
+    <Content Include="res\icons\windows\Square44x44Logo.scale-240.png" />
+    <Content Include="res\icons\windows\Square71x71Logo.scale-240.png" />
+    <Content Include="res\icons\windows\storelogo.png" />
+    <Content Include="res\icons\windows\StoreLogo.scale-240.png" />
+    <Content Include="res\icons\windows\Wide310x150Logo.scale-240.png" />
+    <Content Include="res\native\android\ant.properties" />
+    <Content Include="res\screens\android\screen-hdpi-landscape.png" />
+    <Content Include="res\screens\android\screen-hdpi-portrait.png" />
+    <Content Include="res\screens\android\screen-ldpi-landscape.png" />
+    <Content Include="res\screens\android\screen-ldpi-portrait.png" />
+    <Content Include="res\screens\android\screen-mdpi-landscape.png" />
+    <Content Include="res\screens\android\screen-mdpi-portrait.png" />
+    <Content Include="res\screens\android\screen-xhdpi-landscape.png" />
+    <Content Include="res\screens\android\screen-xhdpi-portrait.png" />
+    <Content Include="res\screens\ios\screen-ipad-landscape.png" />
+    <Content Include="res\screens\ios\screen-ipad-landscape-2x.png" />
+    <Content Include="res\screens\ios\screen-ipad-portrait.png" />
+    <Content Include="res\screens\ios\screen-ipad-portrait-2x.png" />
+    <Content Include="res\screens\ios\screen-iphone-568h-2x.png" />
+    <Content Include="res\screens\ios\screen-iphone-portrait.png" />
+    <Content Include="res\screens\ios\screen-iphone-portrait-2x.png" />
+    <Content Include="res\screens\windows\splashscreen.png" />
+    <Content Include="res\screens\windows\SplashScreen.scale-240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="res\native\windows\package.phone.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <AppxManifest Include="res\native\windows\package.windows.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <AppxManifest Include="res\native\windows\package.windows80.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <PropertyGroup>
+    <TypeScriptToolsVersion>1.0</TypeScriptToolsVersion>
+    <DefaultReferenceGroup>Implicit (Multi-Device Apps)</DefaultReferenceGroup>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Distribution'">
+    <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\CordovaTools\vs-mda-targets\Microsoft.MDA.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\CordovaTools\vs-mda-targets\Microsoft.TypeScript.MDA.targets" />
+  <PropertyGroup>
+    <ProjectUISubcaption>Tools for Apache Cordova</ProjectUISubcaption>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetPlatformIdentifier>MDD</TargetPlatformIdentifier>
+  </PropertyGroup>
+  <Target Name="EnsureBuildPrerequisites">
+    <!-- These errors will trigger if building from inside Visual Studio and requirements could not be determined -->
+    <Error Condition="$(MDAPropertiesEvaluated) == 'true' And $(NodeJsDir) == ''" Text="Path to NodeJs could not be determined. Please check that NodeJs has been installed." />
+    <Error Condition="$(MDAPropertiesEvaluated) == 'true' And $(MDAVsixDir) == ''" Text="Path to the Visual Studio Extension for Tools for Apache Cordova could not be determined. Please check that the extension has been installed." />
+    <!-- These errors will trigger if building from outside Visual Studio (e.g. command line) and environment variables have not been set -->
+    <Error Condition="$(MDAPropertiesEvaluated) == '' And $(NodeJsDir) == ''" Text="Path to NodeJs has not been specified. Please check that NodeJs has been installed and set the NodeJsDir environment variable before building." />
+    <Error Condition="$(MDAPropertiesEvaluated) == '' And $(MDAVsixDir) == ''" Text="Path to Visual Studio Extension for Tools for Apache Cordova has not been specified. Please install it and set the MDAVsixDir environment variable before building." />
+    <!-- Sanity check that things exist in the specified places. These are more likely to fail if building outside Visual Studio and the required environment variables have not been set, or set incorrectly. -->
+    <Error Condition="!Exists('$(NodeJsDir)') Or !Exists('$(NodeJsDir)\node.exe')" Text="The specified NodeJs directory $(NodeJsDir) either does not exist, or does not contain node.exe. Please check that NodeJs has been installed, and set the NodeJsDir variable to the correct directory." />
+    <Error Condition="!Exists('$(MDAVsixDir)') Or !Exists('$(MDAVsixDir)\packages\vs-mda')" Text="The specified directory to the Visual Studio extension $(MDAVsixDir)\node.exe either does not exist, or does not contain a packages\vs-mda sub-directory. Please check that the extension directory exists and set the MDAVsixDir variable to the correct directory." />
+    <!-- Installs (if necessary) the supporting Nodejs module -->
+    <Exec Command="&quot;$(MDAVsixDir)&quot;\packages\vs-mda\install &quot;$(NodeJsDir)&quot; &quot;$(MDAVsixDir)&quot;\packages\vs-mda" />
+  </Target>
+</Project>
