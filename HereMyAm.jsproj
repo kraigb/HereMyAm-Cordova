@@ -179,6 +179,9 @@
     <Content Include="res\icons\windows\storelogo.scale-140.png" />
     <Content Include="res\icons\windows\storelogo.scale-180.png" />
     <Content Include="res\native\windows\CordovaApp_TemporaryKey.pfx" />
+    <Content Include="scripts\frameworks\base.js" />
+    <Content Include="scripts\frameworks\ui.js" />
+    <Content Include="scripts\frameworks\WinJS.js" />
     <Content Include="scripts\share.js" />
     <Folder Include="bld\" />
     <Folder Include="images\" />
@@ -198,9 +201,6 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="index.html" />
-    <Content Include="scripts\frameworks\base.js" />
-    <Content Include="scripts\frameworks\ui.js" />
-    <Content Include="scripts\frameworks\WinJS.js" />
     <Content Include="scripts\index.js" />
     <Content Include="scripts\platformOverrides.js" />
     <Content Include="css\index.css" />
