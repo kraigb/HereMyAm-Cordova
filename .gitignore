@@ -6,6 +6,10 @@
 *.user
 *.sln.docstates
 
+# Various exclusions
+.vs/
+platforms/
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/

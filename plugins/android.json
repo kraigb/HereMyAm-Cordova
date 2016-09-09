@@ -1,0 +1,28 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-screen-orientation": {
+            "PACKAGE_NAME": "kraigb.heremyam"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "kraigb.heremyam"
+        },
+        "cordova-plugin-x-socialsharing": {
+            "PACKAGE_NAME": "kraigb.heremyam"
+        }
+    },
+    "dependent_plugins": {
+        "org.apache.cordova.camera": {
+            "PACKAGE_NAME": "kraigb.heremyam"
+        },
+        "org.apache.cordova.geolocation": {
+            "PACKAGE_NAME": "kraigb.heremyam"
+        }
+    }
+}

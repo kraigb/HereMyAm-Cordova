@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Recommended to prevent pinch zoom in webviews -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+    <title>HereMyAm (Cordova)</title>
+    
+    <link href="css/frameworks/ui-dark.css" rel="stylesheet" />    
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+
+    <!-- Cordova standard -->
+    <script src="cordova.js"></script>
+
+    <!-- WinJS (full framework, see https://github.com/winjs/winjs-modules for
+         building a subset version) -->
+    <script src="scripts/frameworks/base.js"></script>
+    <script src="scripts/frameworks/ui.js"></script>
+    <script src="scripts/frameworks/winjs.js"></script>
+
+    <!-- Project references -->
+    <script src="scripts/platformOverrides.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/share.js"></script>
+
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="title mainChild">
+            <h2 class="titlearea ">Here My Am!</h2>
+        </div>
+        <div id="locationSection" class="mainChild subsection">
+            <h3 class="section-title" role="heading">Here:</h3>
+            <div id="locationControls">
+                <input id="txtLocation" type="text" placeholder="tap to edit" />
+                <button id="btnLocate" class="iconGlobe"></button> 
+            </div>
+        </div>
+        <div id="photoSection" class="mainChild subsection">
+            <h3 id="photoHeading" class="section-title">My:</h3>
+            <div id="photo">
+                <img id="photoImg" src="#" draggable="false"
+                     alt="Tap to capture image from camera" />
+            </div>
+        </div>
+        <div id="shareSection" class="mainChild">
+            <button id="btnShare" class="shareButton" disabled>Share</button>            
+        </div>
+    </div>
+</body>
+
+</html>
